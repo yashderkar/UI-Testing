@@ -1,0 +1,125 @@
+package UI_testing;
+
+import java.io.File;
+import java.io.IOException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import com.google.common.io.Files;
+
+public class Chrome {
+
+	public static void main(String[] args) throws InterruptedException, IOException {
+		System.setProperty("webdriver.chrome.driver","D:\\jar\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.getcalley.com/page-sitemap.xml");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		driver.findElement(By.partialLinkText("https://www.getcalley.com/")).click();
+		Dimension d1=new Dimension(1920,1080);
+		driver.manage().window().setSize(d1);
+		File sc=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc.png"));
+		
+		Dimension d2=new Dimension(1366,768);
+		driver.manage().window().setSize(d2);
+		File sc1=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc1,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc1.png"));
+		
+		Dimension d3=new Dimension(1536,864);
+		driver.manage().window().setSize(d3);
+		File sc2=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc2,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc2.png"));
+		Thread.sleep(500);
+		
+		driver.get("https://www.getcalley.com/page-sitemap.xml");
+		driver.manage().window().maximize();
+		Thread.sleep(500);
+		driver.findElement(By.partialLinkText("https://www.getcalley.com/calley-lifetime-offer/")).click();
+		Dimension d4=new Dimension(1920,1080);
+		driver.manage().window().setSize(d4);
+		File sc3=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc3,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc3.png"));
+		
+		Thread.sleep(500);
+		Dimension d5=new Dimension(1366,768);
+		driver.manage().window().setSize(d5);
+		File sc4=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc4,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc4.png"));
+		
+		Thread.sleep(500);
+		Dimension d6=new Dimension(1536,864);
+		driver.manage().window().setSize(d6);
+		File sc5=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc5,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc5.png"));
+		
+		driver.get("https://www.getcalley.com/page-sitemap.xml");
+		driver.manage().window().maximize();
+		Thread.sleep(500);
+		driver.findElement(By.partialLinkText("https://www.getcalley.com/see-a-demo/")).click();
+		Dimension d7=new Dimension(1920,1080);
+		driver.manage().window().setSize(d7);
+		File sc6=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc6,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc6.png"));
+		
+		Thread.sleep(500);
+		Dimension d8=new Dimension(1366,768);
+		driver.manage().window().setSize(d8);
+		File sc7=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc7,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc7.png"));
+		
+		Thread.sleep(500);
+		Dimension d9=new Dimension(1536,864);
+		driver.manage().window().setSize(d9);
+		File sc8=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc8,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc8.png"));
+		
+		driver.get("https://www.getcalley.com/page-sitemap.xml");
+		driver.manage().window().maximize();
+		Thread.sleep(500);
+		driver.findElement(By.partialLinkText("https://www.getcalley.com/calley-teams-features/")).click();
+		Dimension d10=new Dimension(1920,1080);
+		driver.manage().window().setSize(d10);
+		File sc9=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc9,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc9.png"));
+		
+		Thread.sleep(500);
+		Dimension d11=new Dimension(1366,768);
+		driver.manage().window().setSize(d11);
+		File sc10=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc10,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc10.png"));
+		
+		Thread.sleep(500);
+		Dimension d12=new Dimension(1536,864);
+		driver.manage().window().setSize(d12);
+		File sc11=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc11,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc11.png"));
+		
+		driver.get("https://www.getcalley.com/page-sitemap.xml");
+		driver.manage().window().maximize();
+		Thread.sleep(500);
+		driver.findElement(By.partialLinkText("https://www.getcalley.com/calley-pro-features/")).click();
+		Dimension d13=new Dimension(1920,1080);
+		driver.manage().window().setSize(d13);
+		File sc13=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc13,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc13.png"));
+		
+		Thread.sleep(500);
+		Dimension d14=new Dimension(1366,768);
+		driver.manage().window().setSize(d14);
+		File sc14=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc14,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc14.png"));
+		
+		Thread.sleep(500);
+		Dimension d15=new Dimension(1536,864);
+		driver.manage().window().setSize(d15);
+		File sc15=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(sc15,new File ("C:\\Users\\KHAMANKAR\\Downloads\\sc15.png"));
+		
+		driver.quit();
+	}
+	}
